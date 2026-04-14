@@ -1,0 +1,15 @@
+# ⚠️ NEVER commit these files — they contain secrets
+terraform.tfvars
+*.tfvars
+!*.tfvars.example
+*.pem
+
+# Terraform state (use remote state in production)
+.terraform/
+.terraform.lock.hcl
+terraform.tfstate
+terraform.tfstate.backup
+
+# Lambda build artifacts (auto-generated)
+modules/lambda/lambda_function.py
+modules/lambda/lambda_function.zip
